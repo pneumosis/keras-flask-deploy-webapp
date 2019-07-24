@@ -59,15 +59,10 @@ def model_predict(img_path, model):
 def home():
     # Main page
     return render_template('home.html')
-@app.route('/pneu', methods=['GET'])
+@app.route('/index', methods=['GET'])
 def index():
     # Main page
     return render_template('index.html')
-
-@app.route('/about', methods=['GET'])
-def about():
-    # Main page
-    return render_template('about.html')
 
 
 @app.route('/predict', methods=['GET', 'POST'])
